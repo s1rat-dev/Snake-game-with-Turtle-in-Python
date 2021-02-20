@@ -17,8 +17,9 @@ class Scoreboard(Turtle):
     def updateScoreboard(self):
         self.write('Score: {0}'.format(self.score), align = ALIGNMENT, font = FONT)
         #Write fonksiyonu ile, (Yazinin_kendisi,Yazinin_duracagi_alignment,yazi_fontu) kurallarını da uygulayarak. Ekrana yazı basımını gerçekleştiriyoruz.
-        #Tabi tekrar bir skor yazmak istersek eğer, Aynı pozisyonda üst üste geleceği için,
+        #Tabi tekrar bir skor yazmak istersek eğer, Aynı pozisyonda üst üste geleceği için, yazmadan önce Turtle metnini clear() fonksiyonu ile temizlememiz gerekir.
 
+        
     def gameOver(self):
         self.goto(0,0)
         self.write('GAME OVER', align = ALIGNMENT, font = FONT)
